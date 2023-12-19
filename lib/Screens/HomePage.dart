@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
@@ -123,6 +123,17 @@ class HomePage extends StatelessWidget {
               EdgeInsets.only(right: 8.0, left: 8.0, top: 20.0, bottom: 10.0),
           child: GoPremium(),
         ),
+        Container(
+          padding: const EdgeInsets.all(15),
+          child: Text(
+            'Tasks',
+            style: TextStyle(
+                color: Colors.grey.shade500,
+                fontSize: 26,
+                fontWeight: FontWeight.bold),
+          ),
+        ),
+        Expanded(child: Container()),
       ],
     );
   }
